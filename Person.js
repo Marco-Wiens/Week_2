@@ -2,12 +2,12 @@
 
 class Person{
 
-    constructor(nombre, height, weight, yearOfBirth){
+    constructor(nombre, height, weight, yearOfBirth, hobbies){
         this.nombre = nombre;
         this.height = height;
         this.weight = weight;
         this.yearOfBirth = yearOfBirth;
-
+        this.hobbies = hobbies;
     }
 
     calcularIMC(){
@@ -32,10 +32,18 @@ class Person{
         return edad;
     }
 
+    printAll(){
+        console.log("Nombre - " + this.nombre
+                + "\nAltura - " + this.height
+                + "\nPeso - " + this.weight
+                + "\nAño de Nacimiento - " + this.yearOfBirth);
+    }
+
+    printHobbies(){
+        console.log(this.hobbies);
+    }
+
 }
 
-let persona1 = new Person("Marco", 1.68, 80, null);
-console.log(persona1);
-console.log(persona1.calcularIMC());
-let anyoActual = new Date().getFullYear();
-console.log(persona1.edad(anyoActual));
+module.exports = {Person};
+
