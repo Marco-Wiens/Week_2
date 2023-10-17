@@ -2,12 +2,20 @@
 
 class Person{
 
+<<<<<<< HEAD
     constructor(nombre, height, weight, yearOfBirth, hobbies){
+=======
+    constructor(nombre, height, weight, yearOfBirth){
+>>>>>>> main
         this.nombre = nombre;
         this.height = height;
         this.weight = weight;
         this.yearOfBirth = yearOfBirth;
+<<<<<<< HEAD
         this.hobbies = hobbies;
+=======
+
+>>>>>>> main
     }
 
     calcularIMC(){
@@ -32,6 +40,7 @@ class Person{
         return edad;
     }
 
+<<<<<<< HEAD
     printAll(){
         console.log("Nombre - " + this.nombre
                 + "\nAltura - " + this.height
@@ -47,3 +56,12 @@ class Person{
 
 module.exports = {Person};
 
+=======
+}
+
+let persona1 = new Person("Marco", 1.68, 80, null);
+console.log(persona1);
+console.log(persona1.calcularIMC());
+let anyoActual = new Date().getFullYear();
+console.log(persona1.edad(anyoActual));
+>>>>>>> main
