@@ -28,15 +28,13 @@ class Person{
         }else{
             edad = "Porfavor, introduce correctamente el año de nacimiento de " + this.nombre;
         }
-
         return edad;
     }
 
     printAll(){
-        console.log("Nombre - " + this.nombre
-                + "\nAltura - " + this.height
-                + "\nPeso - " + this.weight
-                + "\nAño de Nacimiento - " + this.yearOfBirth);
+        for(let pers in this){
+            console.log(pers + " - " + this[pers]);
+        }
     }
 
     printHobbies(){
