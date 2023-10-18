@@ -1,5 +1,6 @@
 let contacto = require("./contacts");
-let persona = require("./Person")
+let persona = require("./Person");
+
 
 let hobbies= ["Jugar", "Andar", "Baloncesto"];
 let persona1 = new persona.Person("Marco", 1.68, 80, 2000, hobbies);
