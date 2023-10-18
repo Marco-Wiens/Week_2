@@ -31,10 +31,9 @@ export class Library{
     public toString(): string{
         let todos: string = "";
 
-        for(let book in this.books){
-            let num: number = Number(book) + 1;
-            todos += '\n\nBook' + num +':' + this.books[book].toString();
-        }
+        for(let i=0; i<this.books.length; i++){
+            todos += '\n\nBook' + (i+2) +':' + this.books[i].toString();
+        }    
         return todos;
     }
 

@@ -1,7 +1,7 @@
 
 export class Vector{
 
-    private elements: number[];
+    public elements: number[];
 
     constructor(n:number, k:number){
         this.elements = [];
