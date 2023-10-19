@@ -13,7 +13,7 @@ let myCollection: MobileCollection = new MobileCollection(myMobiles);
 
 myCollection.setMobiles(myMobiles)
 console.log(myCollection.getMobiles());
-let sumaPrecio: number = movil1.getPrice() + movil2.getPrice() + movil3.getPrice() + movil4.getPrice() 
-myCollection.setTotalPrice(sumaPrecio)
+// let sumaPrecio: number = movil1.getPrice() + movil2.getPrice() + movil3.getPrice() + movil4.getPrice() 
+// myCollection.setTotalPrice(sumaPrecio)
 console.log(myCollection.getTotalPrice());
 

@@ -7,6 +7,7 @@ export class MobileCollection{
 
     constructor(mobiles:Mobile[]){
         this.mobiles = mobiles;
+        this.totalPrice = this.totalPriceCalculation();
     }
 
     
@@ -26,4 +27,11 @@ export class MobileCollection{
         this.mobiles = v;
     }   
     
+    private totalPriceCalculation(): number{
+        let suma: number = 0;
+        for(let mov of this.mobiles){
+            suma += mov.getPrice();
+        }
+        return suma;
+    }
 }
