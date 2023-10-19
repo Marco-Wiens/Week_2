@@ -53,4 +53,19 @@ export class Point{
         }
         return quadrant;
     }
+
+    public calculateNearest(points: Point[]):Point{
+        let distancia: number = 0;
+        let p: Point = new Point(0,0); 
+        for(let punto in points){
+            console.log(this.calculateDistance(points[punto]));
+            if(this.calculateDistance(points[punto]) > distancia){
+                distancia = this.calculateDistance(points[punto]);
+                p.setX(points[punto].getX());
+                p.setY(points[punto].getY());
+            }
+        }
+
+        return p
+    }
 }
