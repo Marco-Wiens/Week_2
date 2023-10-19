@@ -11,10 +11,12 @@ console.log(punto.getX());
 console.log(punto.getY());
 punto.toString();
 console.log(punto.distanceToOrigin());
-console.log(punto.calculateDistance(punto2));
+console.log("Distancia Punto1 - Punto2: " + punto.calculateDistance(punto2));
+console.log("Distancia Punto1 - Punto3: " + punto.calculateDistance(punto3));
+console.log("Distancia Punto1 - Punto4: " + punto.calculateDistance(punto4));
 console.log(punto.calculateQuadrant());
 
-let arrPts: Point[] = [punto,punto2,punto3];
+let arrPts: Point[] = [punto4,punto2,punto3];
 
 console.log(punto.calculateNearest(arrPts));
 
