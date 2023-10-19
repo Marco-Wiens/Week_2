@@ -56,7 +56,7 @@ function continent(country: string): void{
     console.log(estas);
 }
 
-function isEven(num: number): void{
+export function isEven(num: number): void{
     let tuNum: string = "";
     if(num%2 == 0){
         tuNum = "El número es par."
