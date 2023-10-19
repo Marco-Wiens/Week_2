@@ -5,6 +5,7 @@ let mat2: Matrix = new Matrix(2,4,10);
 
 
 mat1.print();
+mat2.print();
 let mat3: Matrix = mat1.add(mat2);
 mat3.print();
 let mat4: Matrix = mat1.multNumber(3);
