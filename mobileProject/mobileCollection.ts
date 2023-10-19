@@ -34,4 +34,14 @@ export class MobileCollection{
         }
         return suma;
     }
+
+    public printCollection(): void{
+        let totalMobiles: string = "";
+        console.log("These are all my mobiles: ");
+        
+        for(let mov of this.mobiles){
+            totalMobiles += mov.print();
+        }
+        console.log("\n******************\nPrice overall: " + this.totalPrice);
+    }
 }
