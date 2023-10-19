@@ -37,4 +37,20 @@ export class Point{
     public calculateDistance(anotherPoint: Point):number{
         return Math.sqrt(Math.pow((anotherPoint.getX()-this.x),2) + Math.pow((anotherPoint.getY()-this.y),2));
     }
+
+    public calculateQuadrant():number{
+        let quadrant: number = 0;
+        if(this.x == 0 || this.y == 0){
+            quadrant = 0;
+        }else if(this.x > 0 && this.y > 0){
+            quadrant = 1;
+        }else if(this.x < 0 && this.y > 0){
+            quadrant = 2;
+        }else if(this.x < 0 && this.y < 0){
+            quadrant = 3;
+        }else if(this.x > 0 && this.y < 0){
+            quadrant = 4;
+        }
+        return quadrant;
+    }
 }
