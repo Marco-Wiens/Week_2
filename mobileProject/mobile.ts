@@ -55,4 +55,13 @@ export class Mobile{
     public setPrice(v : number): void {
         this.price = v;
     }
+
+    public print(): void{
+        console.log("\nThe characteristics of the mobile " + this.name + " are:"
+                + "\nName: " + this.name
+                + "\nTrademark: " + this.trademark
+                + "\nmodel: " + this.model
+                + "\nColor: " + this.color
+                + "\nPrice: " + this.price);
+    }
 }
